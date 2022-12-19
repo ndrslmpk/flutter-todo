@@ -47,7 +47,7 @@ class TodoForm extends StatelessWidget {
   void removeItem(int index) {
     final removedTodo = todoList.todos[index];
 
-    todoList.todos.removeAt(index);
+    // todoList.todos.removeAt(index);
     todoListKey.currentState!.removeItem(
         index,
         (context, animation) => TodoItemWidget(

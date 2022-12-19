@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_todo/src/components/todo_search_delegate.dart';
+// import 'package:flutter_todo/src/components/todo_search_delegate.dart';
 import 'package:flutter_todo/src/models/models.dart';
 import 'package:flutter_todo/src/pages/todo_form.dart';
 
@@ -17,8 +17,6 @@ class _TodoAppState extends State<TodoApp> {
   @override
   void initState() {
     super.initState();
-
-    todoList.addDummyTodo("initState");
   }
 
   @override
@@ -29,20 +27,20 @@ class _TodoAppState extends State<TodoApp> {
           appBar: AppBar(
             backgroundColor: Colors.white,
             title: const Text('Hi, Rebecca.'),
-            actions: [
-              IconButton(
-                  icon: const Icon(Icons.search),
-                  color: Colors.blue.shade900,
-                  onPressed: () {
-                    showSearch(
-                      context: context,
-                      delegate: TodoSearchDelegate(),
-                    );
-                  }),
-            ],
+            // actions: [
+            //   IconButton(
+            //       icon: const Icon(Icons.search),
+            //       color: Colors.blue.shade900,
+            //       onPressed: () {
+            //         showSearch(
+            //           context: context,
+            //           delegate: TodoSearchDelegate(),
+            //         );
+            //       }),
+            // ],
           ),
           body: SizedBox(
-            height: 500,
+            height: MediaQuery.of(context).size.height,
             child: TodoForm(todoList: todoList),
           ),
           floatingActionButton: FloatingActionButton(

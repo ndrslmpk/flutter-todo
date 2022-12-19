@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TodoSearchDelegate extends SearchDelegate {
+// ignore: todo
+// TODO: @ndrslmpk How to implement a function to allow submits for new todos within this search ?
   List<String> searchResults = [
     'Go shopping',
     'Do homework',

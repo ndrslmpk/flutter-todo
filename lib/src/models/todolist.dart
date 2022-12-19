@@ -21,7 +21,7 @@ class Todolist {
       : this(
           title: title,
           description: "",
-          todos: List<Todo>.from([Todo.createDummy()], growable: true),
+          todos: List<Todo>.from([], growable: true),
         );
 
   Todolist.createDummy()
@@ -38,4 +38,6 @@ class Todolist {
     //   todos.add(todo);
     // }
   }
+
+  void removeTodo(int index) {}
 }
